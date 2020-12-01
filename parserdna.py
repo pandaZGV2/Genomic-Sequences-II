@@ -10,22 +10,6 @@ for seqrecord in SeqIO.parse("motif_c.fasta", "fasta"):
     if numseq != 0:
         for i in seq:
             countdna[i][count] += 1
-            # if i == 'A':
-            #     countdna['G'][count] = 0
-            #     countdna['C'][count] = 0
-            #     countdna['T'][count] = 0
-            # elif i == 'C':
-            #     countdna['A'][count] = 0
-            #     countdna['G'][count] = 0
-            #     countdna['T'][count] = 0
-            # elif i == 'G':
-            #     countdna['A'][count] = 0
-            #     countdna['C'][count] = 0
-            #     countdna['T'][count] = 0
-            # elif i == 'T':
-            #     countdna['G'][count] = 0
-            #     countdna['C'][count] = 0
-            #     countdna['A'][count] = 0
             count = count + 1
         numseq=numseq+1
     else:
@@ -77,6 +61,6 @@ for i in range(len(countdna['T'])):
     print(countdna['T'][i], end=" ")
 
 print("\n\n" + string)
-print(len(string))
-print(len(countdna['A']),len(countdna['C']),len(countdna['G']),len(countdna['T']))
-print(numseq)
+#print(len(string))
+#print(len(countdna['A']),len(countdna['C']),len(countdna['G']),len(countdna['T']))
+#print(numseq)
