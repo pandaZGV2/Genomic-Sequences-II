@@ -38,7 +38,7 @@ string = ""
 for j in range(len(countdna['A'])):
     maxg = 0
     maxc = 'A'
-    for i in ['A', 'G', 'T', 'C']:
+    for i in ['A', 'T', 'G', 'C']:
         if countdna[i][j] > maxg:
             maxg = countdna[i][j]
             maxc = i
